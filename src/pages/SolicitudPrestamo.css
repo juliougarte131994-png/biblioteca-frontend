@@ -1,0 +1,117 @@
+.solicitud-container {
+    padding: 35px;
+    background: #f4f7fb;
+    min-height: 100vh;
+}
+
+.solicitud-header {
+    margin-bottom: 30px;
+}
+
+.solicitud-header h2 {
+    font-size: 32px;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.solicitud-header p {
+    color: #64748b;
+    font-size: 15px;
+}
+
+.solicitud-card {
+    background: white;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+.solicitud-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.solicitud-table th {
+    background: #f8fafc;
+    padding: 14px;
+    text-align: left;
+    color: #475569;
+    font-weight: 600;
+}
+
+.solicitud-table td {
+    padding: 14px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.solicitud-table tr:hover {
+    background: #f8fafc;
+}
+
+.btn-remove {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 14px 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.btn-remove:hover {
+    background: #dc2626;
+}
+
+.solicitud-footer {
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-enviar {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-enviar:hover {
+    background: #1d4ed8;
+}
+
+.solicitud-empty {
+    background: white;
+    border-radius: 16px;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+.solicitud-empty h3 {
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.solicitud-empty p {
+    color: #64748b;
+}
+
+@media (max-width: 900px) {
+    .solicitud-table {
+        font-size: 14px;
+    }
+
+    .solicitud-container {
+        padding: 20px;
+    }
+
+    .solicitud-footer {
+        justify-content: center;
+    }
+}
