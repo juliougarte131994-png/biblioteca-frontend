@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3001/api/prestamos";
+const API_URL = "https://biblioteca-backend-eb0w.onrender.com/api/prestamos";
 
 // 🔥 GET
 export const getPrestamos = async () => {

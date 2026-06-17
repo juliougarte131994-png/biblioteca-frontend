@@ -11,7 +11,7 @@ function Solicitudes() {
 
     const loadSolicitudes = async () => {
         try {
-            const res = await fetch("http://localhost:3001/api/solicitudes");
+            const res = await fetch("https://biblioteca-backend-eb0w.onrender.com/api/solicitudes");
             const data = await res.json();
 
             console.log(data);
@@ -29,7 +29,7 @@ function Solicitudes() {
     };
 
     const aprobar = async (id) => {
-        await fetch(`http://localhost:3001/api/solicitudes/${id}/aprobar`, {
+        await fetch(`https://biblioteca-backend-eb0w.onrender.com/api/solicitudes/${id}/aprobar`, {
             method: "PUT"
         });
 
@@ -40,7 +40,7 @@ function Solicitudes() {
     const devolverLibro = async (id) => {
         try {
             const response = await fetch(
-                `http://localhost:3001/api/solicitudes/${id}/devolver`,
+                `https://biblioteca-backend-eb0w.onrender.com/api/solicitudes/${id}/devolver`,
                 {
                     method: "PUT"
                 }

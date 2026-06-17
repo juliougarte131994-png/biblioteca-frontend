@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3001/api/usuarios";
+const API_URL = "https://biblioteca-backend-eb0w.onrender.com/api/usuarios";
 
 export const createUsuario = async (data) => {
     const response = await fetch(API_URL, {

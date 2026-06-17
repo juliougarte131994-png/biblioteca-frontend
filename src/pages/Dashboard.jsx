@@ -28,7 +28,7 @@ function Dashboard() {
     const cargarPrestamos = async () => {
         try {
             const response = await fetch(
-                `http://localhost:3001/api/prestamos?usuario_id=${usuario.id}&rol=estudiante`
+                `https://biblioteca-backend-eb0w.onrender.com/api/prestamos?usuario_id=${usuario.id}&rol=estudiante`
             )
 
 const data = await response.json()
@@ -45,7 +45,7 @@ if (Array.isArray(data)) {
 const cargarSolicitudes = async () => {
     try {
         const response = await fetch(
-            `http://localhost:3001/api/solicitudes?usuario_id=${usuario.id}`
+            `https://biblioteca-backend-eb0w.onrender.com/api/solicitudes?usuario_id=${usuario.id}`
         )
 
         const data = await response.json()
@@ -62,7 +62,7 @@ const cargarSolicitudes = async () => {
 const cargarPrestamosAdmin = async () => {
     try {
         const response = await fetch(
-            "http://localhost:3001/api/prestamos"
+            "https://biblioteca-backend-eb0w.onrender.com/api/prestamos"
         )
 
         const data = await response.json()
@@ -79,7 +79,7 @@ const cargarPrestamosAdmin = async () => {
 const cargarLibros = async () => {
     try {
         const response = await fetch(
-            "http://localhost:3001/api/libros"
+            "https://biblioteca-backend-eb0w.onrender.com/api/libros"
         )
 
         const data = await response.json()

@@ -28,7 +28,7 @@ function Reportes() {
 
     const cargarPrestamos = async () => {
         try {
-            const response = await fetch("http://localhost:3001/api/prestamos")
+            const response = await fetch("https://biblioteca-backend-eb0w.onrender.com/api/prestamos")
             const data = await response.json()
 
             setPrestamosData(data)

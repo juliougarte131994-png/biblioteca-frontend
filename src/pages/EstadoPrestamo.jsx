@@ -13,7 +13,7 @@ function EstadoPrestamo() {
         const user = JSON.parse(localStorage.getItem("usuarioLogueado"));
 
         const res = await fetch(
-            `http://localhost:3001/api/solicitudes?usuario_id=${user.id}`
+            `https://biblioteca-backend-eb0w.onrender.com/api/solicitudes?usuario_id=${user.id}`
         );
 
         const data = await res.json();

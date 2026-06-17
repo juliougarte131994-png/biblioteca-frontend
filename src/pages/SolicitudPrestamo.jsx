@@ -16,7 +16,7 @@ function SolicitudPrestamo() {
         const user = JSON.parse(localStorage.getItem("usuarioLogueado"));
 
         try {
-            await fetch("http://localhost:3001/api/solicitudes", {
+            await fetch("https://biblioteca-backend-eb0w.onrender.com/api/solicitudes", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -40,7 +40,7 @@ function SolicitudPrestamo() {
 
         try {
             for (let libro of carrito) {
-                await fetch("http://localhost:3001/api/solicitudes", {
+                await fetch("https://biblioteca-backend-eb0w.onrender.com/api/solicitudes", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"

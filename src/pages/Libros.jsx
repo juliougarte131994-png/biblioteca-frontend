@@ -19,7 +19,7 @@ function Libros() {
 
     const cargarLibros = async () => {
         try {
-            const response = await fetch("http://localhost:3001/api/libros")
+            const response = await fetch("https://biblioteca-backend-eb0w.onrender.com/api/libros")
             const data = await response.json()
 
             setLibros(data)
@@ -33,7 +33,7 @@ function Libros() {
         e.preventDefault()
 
         try {
-            const response = await fetch("http://localhost:3001/api/libros", {
+            const response = await fetch("https://biblioteca-backend-eb0w.onrender.com/api/libros", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -71,7 +71,7 @@ function Libros() {
 
         try {
             const response = await fetch(
-                `http://localhost:3001/api/libros/${id}`,
+                `https://biblioteca-backend-eb0w.onrender.com/api/libros/${id}`,
                 {
                     method: "DELETE"
                 }
@@ -104,7 +104,7 @@ function Libros() {
     const guardarEdicion = async () => {
         try {
             const response = await fetch(
-                `http://localhost:3001/api/libros/${editandoId}`,
+                `https://biblioteca-backend-eb0w.onrender.com/api/libros/${editandoId}`,
                 {
                     method: "PUT",
                     headers: {
