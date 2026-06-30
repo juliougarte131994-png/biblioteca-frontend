@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3001/api/mensajes";
+const API_URL = `${import.meta.env.VITE_API_URL}/api/mensajes`;
 
 // 🔥 OBTENER MENSAJES
 export const getMensajes = async (usuarioId) => {

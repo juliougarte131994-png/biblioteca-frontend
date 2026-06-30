@@ -22,7 +22,7 @@ function Mensajes() {
     };;
 
     const loadUsuarios = async () => {
-        const res = await fetch("http://localhost:3001/api/mensajes/usuarios");
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/mensajes/usuarios`);
         const data = await res.json();
         setUsuarios(data);
     };
